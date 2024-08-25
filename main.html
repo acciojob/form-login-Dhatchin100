@@ -3,21 +3,22 @@
 <html>
 
 <head>
-	<meta charset=utf-8 />
-		<title>Return first and last name from a form</title>
-		<style type="text/css">
-			body {margin: 30px;}
-		</style> 
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<form id="form1" onsubmit="getFormvalue()">
-		First name: <input type="text" name="fname"><br>
-		Last name: <input type="text" name="lname"><br>
-		<input type="submit" value="Submit">
+	<!-- the entire body must be written by student -->
+	<form id="myForm">
+	<label>First Name:</label>
+	<input type="text" name="First Name" id="fname"></input><br>
+	<label>Last Name:</label>
+	<input type="text" name="Last Name"id="lname"></input><br>
+	<label>Phone Number:</label>
+	<input type="tel" name="Phone Number"id="Pnum"></input><br>
+	<label>Email ID:</label>
+	<input type="email" name="Email ID"id="eid"></input><br>
+	<button type="submit"onclick="displayFormValues()">Submit</button>
 	</form>
-	
     <script type="text/javascript" src="./script.js">
 </script>
 
