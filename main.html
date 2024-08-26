@@ -1,27 +1,15 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>Form Login</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<form id="myForm">
-	<label>First Name:</label>
-	<input type="text" name="First Name" id="fname"></input><br>
-	<label>Last Name:</label>
-	<input type="text" name="Last Name"id="lname"></input><br>
-	<label>Phone Number:</label>
-	<input type="tel" name="Phone Number"id="Pnum"></input><br>
-	<label>Email ID:</label>
-	<input type="email" name="Email ID"id="eid"></input><br>
-	<button type="submit"onclick="displayFormValues()">Submit</button>
-	</form>
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <form id="myForm" onsubmit="getFormValue()">
+        First Name: <input type="text" name="fname" value="John"><br>
+        Last Name: <input type="text" name="lname" value="Doe"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <script src="script.js"></script>
 </body>
-
 </html>
