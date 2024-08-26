@@ -1,12 +1,9 @@
-// script.js
-function getFormValue() {
-    // Get the form element
-    const form = document.getElementById("myForm");
+const firstName = document.getElementsByTagName("input")[0]
+const secondName= document.getElementsByTagName("input")[1]
+// console.log(firstName.value);
+function getFormvalue() {
+    //Write your code here
+	// console.log(firstName.value);
+   alert(firstName.value+" "+secondName.value);
 
-    // Get the values of the first name and last name fields
-    const firstName = form.elements.fname.value;
-    const lastName = form.elements.lname.value;
-
-    // Display the full name using an alert
-    alert(firstName + " " + lastName);
 }
